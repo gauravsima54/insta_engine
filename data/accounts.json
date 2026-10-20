@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-10-20T17:28:02.334142+00:00",
+  "total_count": 5,
+  "profiles": [
+    {
+      "id": "3146e307-60c9-4814-9807-8f40e7976c77",
+      "first_name": "Dante",
+      "last_name": "Dubois",
+      "full_name": "Dante Dubois",
+      "username": "real_dantedubois",
+      "email": "real_dantedubois@proton.me",
+      "bio": "Fixing edge-case bugs and writing clear issue reproduction steps · Into restoring mid-century modern furniture · Curious by default.",
+      "persona": "open_source_builder",
+      "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80",
+      "local_avatar_path": null,
+      "location": "Amsterdam, Netherlands",
+      "timezone": "Europe/Amsterdam",
+      "status": "pending",
+      "created_at": "2026-10-20T17:27:52.538667+00:00",
+      "metadata": {
+        "locale": "en_US",
+        "browser_fingerprint": "chrome_v124_linux_3146e3",
+        "simulated_trust_score": 0.89,
+        "tags": [
+          "open_source_builder",
+          "amsterdam"
+        ]
+      }
+    },
+    {
+      "id": "eb37e2f3-857d-482b-9db0-2be51a7abb49",
+      "first_name": "Julian",
+      "last_name": "Lindqvist",
+      "full_name": "Julian Lindqvist",
+      "username": "julianlindqvist9",
+      "email": "julianlindqvist9@proton.me",
+      "bio": "Architectural and street photographer capturing quiet morning light · Into restoring mid-century modern furniture · Obsessed with details that matter.",
+      "persona": "photographer",
+      "avatar_url": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&auto=format&fit=crop&q=80",
+      "local_avatar_path": null,
+      "location": "Brooklyn, NY",
+      "timezone": "America/New_York",
+      "status": "pending",
+      "created_at": "2026-10-20T17:27:52.538716+00:00",
+      "metadata": {
+        "locale": "en_US",
+        "browser_fingerprint": "chrome_v124_linux_eb37e2",
+        "simulated_trust_score": 0.92,
+        "tags": [
+          "photographer",
+          "brooklyn"
+        ]
+      }
+    },
+    {
+      "id": "b32286ab-1c49-48c9-9a48-da9593472c8e",
+      "first_name": "Chloe",
+      "last_name": "Kaufmann",
+      "full_name": "Chloe Kaufmann",
+      "username": "chloekaufmann",
+      "email": "chloekaufmann@gmail.com",
+      "bio": "Motion designer turning complex software interactions into fluid animations. Big fan of learning classical guitar fingerpicking. Working in the open.",
+      "persona": "creative_designer",
+      "avatar_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&auto=format&fit=crop&q=80",
+      "local_avatar_path": null,
+      "location": "Berlin, Germany",
+      "timezone": "Europe/Berlin",
+      "status": "pending",
+      "created_at": "2026-10-20T17:27:52.538753+00:00",
+      "metadata": {
+        "locale": "en_US",
+        "browser_fingerprint": "chrome_v124_linux_b32286",
+        "simulated_trust_score": 0.85,
+        "tags": [
+          "creative_designer",
+          "berlin"
+        ]
+      }
+    },
+    {
+      "id": "5c893608-af20-4a67-8010-6643984c87cc",
+      "first_name": "Julian",
+      "last_name": "Sterling",
+      "full_name": "Julian Sterling",
+      "username": "juliansterling61",
+      "email": "juliansterling61@gmail.com",
+      "bio": "Full-stack software developer exploring Rust and web assembly · Into curating obscure electronic ambient playlists · Obsessed with details that matter.",
+      "persona": "tech_enthusiast",
+      "avatar_url": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&auto=format&fit=crop&q=80",
+      "local_avatar_path": null,
+      "location": "Austin, TX",
+      "timezone": "America/Chicago",
+      "status": "verified",
+      "created_at": "2026-10-20T17:28:01.828956+00:00",
+      "metadata": {
+        "locale": "en_US",
+        "browser_fingerprint": "chrome_v124_linux_5c8936",
+        "simulated_trust_score": 0.9,
+        "tags": [
+          "tech_enthusiast",
+          "austin"
+        ],
+        "local_avatar_path": "data/avatars/avatar_5c893608.jpg",
+        "bio": "Cloud infrastructure engineer who still loves physical server racks. Big fan of sci-fi novels from the 1970s. Obsessed with details that matter.",
+        "verified_at": "2026-10-20T17:28:02.102649+00:00",
+        "is_test_ready": true
+      }
+    },
+    {
+      "id": "12668f2a-6fdf-429a-b9a8-9170dbae109e",
+      "first_name": "Owen",
+      "last_name": "Kowalski",
+      "full_name": "Owen Kowalski",
+      "username": "owen_kowalski",
+      "email": "owen_kowalski@outlook.com",
+      "bio": "Searching for the ultimate light roast across third-wave cafes. Big fan of fermenting hot sauces and ginger beer. Always building something new.",
+      "persona": "coffee_devotee",
+      "avatar_url": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&auto=format&fit=crop&q=80",
+      "local_avatar_path": null,
+      "location": "Berlin, Germany",
+      "timezone": "Europe/Berlin",
+      "status": "verified",
+      "created_at": "2026-10-20T17:28:01.830797+00:00",
+      "metadata": {
+        "locale": "en_US",
+        "browser_fingerprint": "chrome_v124_linux_12668f",
+        "simulated_trust_score": 0.91,
+        "tags": [
+          "coffee_devotee",
+          "berlin"
+        ],
+        "local_avatar_path": "data/avatars/avatar_12668f2a.jpg",
+        "bio": "By day: Searching for the ultimate light roast across third-wave cafes. Outside the screen: collecting Japanese stationery and fountain pens. Always building something new.",
+        "verified_at": "2026-10-20T17:28:02.333425+00:00",
+        "is_test_ready": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+# PersonaPulse Production Dependencies
+# Install via: pip install -r requirements.txt
+
+# HTTP Networking & Connection Pooling
+requests>=2.31.0
+
+# Image Validation & Avatar Processing
+Pillow>=10.2.0
+
+# YAML Configuration Parser
+PyYAML>=6.0.1
+
+# High-density Terminal Table Formatting
+tabulate>=0.9.0
+
+# Testing Suite (Development & CI)
+pytest>=8.0.0

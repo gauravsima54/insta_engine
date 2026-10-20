@@ -1,0 +1,95 @@
+# ==============================================================================
+# PersonaPulse Production Configuration File
+# Optimized for Headless Linux Runners, Automated CI/CD, and Local Simulation
+# ==============================================================================
+
+app_name: "PersonaPulse"
+environment: "headless_production"  # Options: development, ci, headless_production
+
+# ------------------------------------------------------------------------------
+# 1. Human-Like Behavior Engine Configuration
+# ------------------------------------------------------------------------------
+behavior:
+  # Base pacing delay between actions (seconds)
+  base_delay_seconds: 3.5
+
+  # Minimum and maximum randomized jitter range (seconds)
+  jitter_min_seconds: 1.2
+  jitter_max_seconds: 6.8
+
+  # Distribution algorithm: "gaussian" (normal bell curve), "uniform", or "pareto" (80/20 bursts)
+  jitter_distribution: "gaussian"
+
+  # Standard deviation for Gaussian distribution
+  gaussian_std_dev: 1.25
+
+  # Cooldown trigger: trigger a human rest/coffee pause after N actions
+  cooldown_after_actions: 4
+
+  # Duration bounds for cooldown periods (seconds)
+  cooldown_min_seconds: 15.0
+  cooldown_max_seconds: 40.0
+
+  # Circadian pacing: dynamically adjust pacing depending on simulated local time
+  enable_circadian_pacing: false
+
+  # Exponential backoff parameters for handling HTTP 429 / Rate Limiting
+  max_backoff_retries: 5
+  backoff_base_seconds: 2.0
+  backoff_max_seconds: 64.0
+  backoff_jitter_factor: 1.0  # 1.0 = Full jitter (AWS/Google recommended)
+
+# ------------------------------------------------------------------------------
+# 2. Profile Metadata Generator Configuration
+# ------------------------------------------------------------------------------
+profile_generator:
+  default_locale: "en_US"
+
+  # Directory where avatar images will be cached and validated
+  avatar_download_dir: "data/avatars"
+
+  # Validate magic bytes (JPEG \xFF\xD8\xFF, PNG) before saving
+  validate_image_headers: true
+
+  # Max acceptable file size for avatar downloads (bytes, default: 5MB)
+  max_avatar_size_bytes: 5242880
+
+  include_personas: true
+  personas_pool:
+    - "tech_enthusiast"
+    - "digital_nomad"
+    - "creative_designer"
+    - "coffee_devotee"
+    - "fitness_runner"
+    - "open_source_builder"
+    - "photographer"
+
+  # Verified public photo endpoints for testing placeholder avatars
+  avatar_sources:
+    - "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80"
+    - "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80"
+    - "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&auto=format&fit=crop&q=80"
+    - "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80"
+    - "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&auto=format&fit=crop&q=80"
+    - "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&auto=format&fit=crop&q=80"
+    - "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&auto=format&fit=crop&q=80"
+    - "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&auto=format&fit=crop&q=80"
+
+# ------------------------------------------------------------------------------
+# 3. Storage & Persistence
+# ------------------------------------------------------------------------------
+storage:
+  data_directory: "data"
+  accounts_file: "data/accounts.json"
+  audit_log_file: "logs/execution.log"
+  atomic_writes: true       # Use tempfile + atomic rename to prevent file corruption
+  backup_on_save: true      # Maintain .json.bak snapshot before write
+
+# ------------------------------------------------------------------------------
+# 4. Network & Client Environment
+# ------------------------------------------------------------------------------
+network:
+  timeout_seconds: 10.0
+  user_agent: "PersonaPulse/1.0 (+headless linux; automation testing)"
+  simulate_network_jitter: true
+  max_concurrent_tasks: 3

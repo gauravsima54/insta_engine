@@ -1,0 +1,6 @@
+{
+  "name": "PersonaPulse - Profile Automation Engine & Behavioral Simulator",
+  "description": "Production-ready automation system for human-like profile generation, behavioral pacing with randomized jitter, exponential backoff, and cloud task scheduling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
